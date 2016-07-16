@@ -1,0 +1,15 @@
+{
+  "name": "Digitalocean Domain Filter",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Adds the ability to filter your domain list in the Digitalocean dashboard",
+  "web_accessible_resources" : [
+    "do.js"
+  ],
+  "content_scripts": [{
+    "matches": ["https://cloud.digitalocean.com/networking*"],
+    "js": [
+      "do.js"
+    ]
+  }]
+}
